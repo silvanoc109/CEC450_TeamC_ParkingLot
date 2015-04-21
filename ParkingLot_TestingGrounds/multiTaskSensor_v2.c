@@ -2,16 +2,11 @@
 /* LEFT TO BE DONE
 
 - check address of sysOutBite and SysInByte
-- semaphore/message queu for critical aerea parking lot count
+- semaphore/message queue for critical aerea parking lot count
 - max cars in parking >> not letting them pass when you reach that number
 - when parking lot  = 0 not letting car out
 - add watch dogs (too much time gate opened for example)
 */
-
-
-
-
-
 
 #include <taskLib.h> /* we use tasks... */
 
@@ -19,8 +14,6 @@ int iActuators;
 int parkingLotCount = 50; 
 int oldSensors = getSensorValues();
 int newSensors = 0;
-
-
 
 void setActuatorValues(int iActuators)
 { 
