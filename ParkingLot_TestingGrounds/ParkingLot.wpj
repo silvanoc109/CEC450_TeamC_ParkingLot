@@ -138,25 +138,24 @@ PENTIUMgnu
 2.2
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor.c_dependDone
+<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_dependDone
 TRUE
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor.c_dependencies
-$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
-	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h
+<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor.c_objects
-multiTaskSensor.o
+<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_objects
+multiTaskSensor_v2.o
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor.c_tool
+<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_tool
 C/C++ compiler
 <END>
 
 <BEGIN> PROJECT_FILES
-$(PRJ_DIR)/multiTaskSensor.c
+$(PRJ_DIR)/multiTaskSensor_v2.c
 <END>
 
 <BEGIN> userComments

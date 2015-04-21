@@ -11,7 +11,7 @@ else
 PRJ_DIR        = .
 endif
 PRJ_TYPE       = vxApp
-PRJ_OBJS       = multiTaskSensor.o
+PRJ_OBJS       = multiTaskSensor_v2.o
 BUILD_SPEC     = PENTIUMgnu
 TGT_DIR        = $(WIND_BASE)/target
 
@@ -67,16 +67,15 @@ include $(TGT_DIR)/h/make/rules.project
 ## build-configuration info
 
 ifeq ($(BUILD_SPEC),PENTIUMgnu)
-multiTaskSensor.o:
-	$(CC) -g -mcpu=pentium -march=pentium -ansi -nostdlib -fno-builtin -fno-defer-pop -I. -I$(WIND_BASE)/target/h/ -DCPU=PENTIUM -DTOOL_FAMILY=gnu -DTOOL=gnu -c $(PRJ_DIR)/multiTaskSensor.c
+multiTaskSensor_v2.o:
+	$(CC) -g -mcpu=pentium -march=pentium -ansi -nostdlib -fno-builtin -fno-defer-pop -I. -I$(WIND_BASE)/target/h/ -DCPU=PENTIUM -DTOOL_FAMILY=gnu -DTOOL=gnu -c $(PRJ_DIR)/multiTaskSensor_v2.c
 endif
 
 
 ## dependencies
 
-multiTaskSensor.o: $(PRJ_DIR)/multiTaskSensor.c \
-	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
-	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h
+multiTaskSensor_v2.o: $(PRJ_DIR)/multiTaskSensor_v2.c \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h
 
 
 ## user defined rules
