@@ -138,24 +138,48 @@ PENTIUMgnu
 2.2
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_dependDone
+<BEGIN> FILE_$(PRJ_DIR)/main_William_Layne_Attempt.c_dependDone
 TRUE
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_dependencies
-$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h
+<BEGIN> FILE_$(PRJ_DIR)/main_William_Layne_Attempt.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	$(PRJ_DIR)/parkingHeader.h
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_objects
-multiTaskSensor_v2.o
+<BEGIN> FILE_$(PRJ_DIR)/main_William_Layne_Attempt.c_objects
+main_William_Layne_Attempt.o
 <END>
 
-<BEGIN> FILE_$(PRJ_DIR)/multiTaskSensor_v2.c_tool
+<BEGIN> FILE_$(PRJ_DIR)/main_William_Layne_Attempt.c_tool
 C/C++ compiler
 <END>
 
+<BEGIN> FILE_$(PRJ_DIR)/parkingFunctions.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/parkingFunctions.c_dependencies
+
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/parkingFunctions.c_objects
+parkingFunctions.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/parkingFunctions.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/parkingHeader.h_dependDone
+TRUE
+<END>
+
 <BEGIN> PROJECT_FILES
-$(PRJ_DIR)/multiTaskSensor_v2.c
+$(PRJ_DIR)/main_William_Layne_Attempt.c \
+	$(PRJ_DIR)/parkingHeader.h \
+	$(PRJ_DIR)/parkingFunctions.c
 <END>
 
 <BEGIN> userComments
